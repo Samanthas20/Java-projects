@@ -1,0 +1,48 @@
+package airlineProgram;
+
+public class AirlineProgram {
+
+
+//Flight Class
+//Implement a flight class
+//declare instances of airlineName, flight number, flight's origin and destination
+//create constructor that initialize all instances
+//create getters and setters for each instance
+//test the class using FlightTest driver class
+//**************************************************
+
+	String _airline;
+	String _flightNumber;
+	String _origin;
+	String _destination;
+	
+	//Constructor
+	public AirlineProgram (String airline, String flightNumber, String origin, String destination)
+	{
+		_airline = airline;
+		_flightNumber = flightNumber;
+		_origin = origin;
+		_destination = destination;
+	}
+	
+	//getters
+	public String getAirline() {return _airline;}
+	public String getFlightNum() {return _flightNumber;}
+	public String getOrigin() {return _origin;}
+	public String getDestination() {return _destination;}
+	
+	public void setAirline(String airline) {_airline = airline;}
+	public void setFlightNum(String flightNum) {_flightNumber = flightNum;}
+	public void setOrigin(String origin) {_origin = origin;}
+	public void setDestinatino(String destination) {_destination = destination;}
+	
+	public String toString()
+	{
+		return "Flight Information\nAirline: " + getAirline() + "\nFlightNumber: " + getFlightNum() + 
+				"\nOrigi: " + getOrigin() + "\nDestination: " + getDestination();
+	
+	}
+	
+	
+
+}
